@@ -5,6 +5,6 @@
 mkdir ~/java-mvn-app
 cd ~/java-mvn-app
 rpm -qa | grep java
-curl https://start.spring.io/starter.tgz -d dependencies=webflux,actuator -d javaVersion=8 | tar -xzvf ~/java-mvn-app
+curl https://start.spring.io/starter.tgz -d dependencies=webflux,actuator -d javaVersion=8 | tar -xzvf -
 ./mvnw install
 ls -l ~/java-mvn-app/target/*.jar
